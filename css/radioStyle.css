@@ -81,6 +81,8 @@ body {
     box-shadow: 0px 0px 8px #4182d3;
     width: 50%;
     margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .player {
@@ -155,6 +157,8 @@ footer>a {
     .card-body {
         width: 82%;
         font-size: 20px;
+        margin-top: 20%;
+        margin-bottom: 20%;
     }
     .logoSign {
         width: 50px;
