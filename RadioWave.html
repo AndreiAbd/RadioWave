@@ -1,0 +1,80 @@
+<!--
+█▀▀ █▀█ █▀▄ █▀▀ █▀█ ▀▄▀
+█▄▄ █▄█ █▄▀ ██▄ █▀▄ █░█
+CODER X |تم تصميم الموقع و برمجته من قبل اندريه عبد
+mail      :  usr.g0a1@gmial.com
+Whatsapp  :  +963934820511
+Pinterest :  https://www.pinterest.com/andreiabd93/
+Instagram :  https://www.instagram.com/andrei_abd/
+Linkeden  :  https://www.linkedin.com/in/andreiabd
+Facebook  :  https://www.facebook.com/andreiaabd/
+Github    :  https://github.com/AndreiAbd
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Andrei Abd - CoderX">
+    <meta name="keywords" content="Andrei Abd, CoderX, X, Coder">
+    <link rel="stylesheet" href="css/radioStyle.css">
+    <link rel="icon" type="image/x-icon" href="png/00_Icon_Radio_Wave.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <title>Radio Wave</title>
+</head>
+
+<body>
+
+    <audio src="ogg/00_Hint.ogg" id="click_Sound"></audio>
+    <div class="headerRadioWave">
+        <img src="png/00_Icon_Radio_Wave.png" alt="Logo" class="logoSign" onclick="window.location.reload();">
+        <p>Radio Wave</p>
+    </div>
+    <br>
+    <div class="card-body" style="background-image: url(img/00_Bk_Radio.jpg);background-repeat:repeat;">
+        <div id="player" class="player">
+            <div class="upStyle">
+                <div id="blankGif">
+                    <p>&#9869;&#x268E;&#9869;&#x268E;&#9869;&#x268E;&#9869;&#x268E;&#9869;&#9869;&#x268E;&#9869;&#9869;&#x268E;</p>
+                </div>
+                <img src="gif/wave.gif" id="waveGif" class="waveGif">
+            </div>
+            <header>
+                <p id="title_radio" style="text-shadow: 0px 0px 5px #000;color: #76b1f8;border-top:1px solid #4182d3 ;border-bottom:1px solid #4182d3 ;">[Please Wait]</p>
+            </header>
+            <div id="content">
+                <div id="buttons" class="buttons">
+                    <button onclick="document.getElementById('click_Sound').play()" id="back">&#10096;&#10096;</button>
+                    <button onclick="document.getElementById('click_Sound').play()" id="play_pause">&#10073;&#10073;</button>
+                    <button onclick="document.getElementById('click_Sound').play()" id="next">&#10097;&#10097;</button>
+                    <audio src="" id="audio_file"></audio>
+                    <hr style="color: #4182d3;">
+                    <button onclick="ctlSound()">&#9776;</button>
+                </div>
+                <div id="volume" class="volume">
+                    <h4>Volume</h4>
+                    <input type="range" id="volume_range">
+                    <h4>Sound Speed</h4>
+                    <input type="range" id="volume_speed" max="200" min="0">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <a href="https://andreiabd.github.io/CoderX/" target="_blank">Powred by CoderX © <span id="addCurrentYear"></span></a>
+    </footer>
+    <!--Loader Page-->
+    <div class="loader">
+        <div class="logo-loader">
+            <img src="png/00_Icon_Radio_Wave.png" width="150px" height="150px">
+        </div>
+    </div>
+
+    <script src="js/radioScript.js"></script>
+</body>
+
+</html>

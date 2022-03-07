@@ -1,0 +1,179 @@
+/* Powered | CoderX | Andrei Abd
+█▀▀ █▀█ █▀▄ █▀▀ █▀█ ▀▄▀
+█▄▄ █▄█ █▄▀ ██▄ █▀▄ █░█
+CODER X |تم تصميم الموقع و برمجته من قبل اندريه عبد
+mail      :  usr.g0a1@gmial.com
+Whatsapp  :  +963934820511
+Pinterest :  https://www.pinterest.com/andreiabd93/
+Instagram :  https://www.instagram.com/andrei_abd/
+Linkeden  :  https://www.linkedin.com/in/andreiabd
+Facebook  :  https://www.facebook.com/andreiaabd/
+Github    :  https://github.com/AndreiAbd
+*/
+
+body {
+    background-color: rgb(44, 44, 44);
+    color: #9dc1ed;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+
+/*Loader*/
+
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader.hidden {
+    animation: fadeOut 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.logoSign,
+.logo-loader {
+    animation-name: scale2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes scale2 {
+    0% {
+        opacity: 0.5;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1.5;
+    }
+    75% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.card-body {
+    border: 1px solid #4182d3;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 8px #4182d3;
+    width: 50%;
+    margin: auto;
+}
+
+.player {
+    margin: 20px;
+}
+
+.volume {
+    display: none;
+}
+
+.upStyle {
+    border: 1px solid #4182d3;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #000;
+    background: #000;
+}
+
+.waveGif {
+    margin: auto;
+    padding: 5px;
+    width: 50%;
+    cursor: wait;
+}
+
+.buttons>button {
+    border: 1px outset #4182d3;
+    border-radius: 5px;
+    margin: 10px;
+    width: 10%;
+    box-shadow: 0px 0px 10px #000;
+    background-color: #222;
+    color: #4182d3;
+    font-size: large;
+    cursor: pointer;
+}
+
+.headerRadioWave {
+    display: flex;
+    border-top: 1px solid #4182d3;
+    border-bottom: 1px solid #4182d3;
+}
+
+.headerRadioWave>p {
+    font-size: 30px;
+}
+
+.headerRadioWave>img {
+    width: 100px;
+    height: 100px;
+}
+
+#blankGif {
+    font-size: 20px;
+    color: #4182d3;
+    cursor: progress;
+}
+
+footer {
+    border-top: 1px solid #4182d3;
+    border-bottom: 1px solid #4182d3;
+    text-align: center;
+}
+
+footer>a {
+    text-decoration: none;
+    color: #76b1f8;
+    font-size: large;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 830px) {
+    .card-body {
+        width: 82%;
+        font-size: 20px;
+    }
+    .logoSign {
+        width: 50px;
+        height: 50px;
+    }
+    .headerRadioWave>p {
+        font-size: 15px;
+    }
+    .headerRadioWave>img {
+        width: 50px;
+        height: 50px;
+    }
+    #blankGif {
+        font-size: 15px;
+    }
+    .buttons>button {
+        font-size: small;
+    }
+    footer>a {
+        font-size: 10px;
+    }
+}
