@@ -74,11 +74,12 @@ header>p>span {
     color: #fff;
     padding: 10px;
     text-align: center;
+    margin: auto;
 }
 
 .mainCardStyle {
     border: 2px #fff solid;
-    width: 30%;
+    width: 60%;
     margin: auto;
     background: #444;
     border-radius: 5px;

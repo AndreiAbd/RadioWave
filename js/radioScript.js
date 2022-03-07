@@ -108,6 +108,7 @@ class Audio_Player {
         this.play_pause();
     }
     play_pause() {
+
         if (this.isPlayed == false) {
             document.getElementById('waveGif').style.display = 'block';
             document.getElementById('blankGif').style.display = 'none';
@@ -140,33 +141,25 @@ class Volume {
     }
 }
 onload = new Volume();
-class Color {
-    constructor() {
-        this.color_1 = document.getElementById("color_1");
-        this.color_1.addEventListener("click", () => {
-            this.select_color("color_1");
-        });
-        this.color_2 = document.getElementById("color_2");
-        this.color_2.addEventListener("click", () => {
-            this.select_color("color_2");
-        });
-        this.color_3 = document.getElementById("color_3");
-        this.color_3.addEventListener("click", () => {
-            this.select_color("color_3");
-        });
-        this.color_4 = document.getElementById("color_4");
-        this.color_4.addEventListener("click", () => {
-            this.select_color("color_4");
-        });
+
+var elem = document.documentElement;
+
+/* View in fullscreen */
+function openFullscreen() {
+    document.getElementById('click_Sound').play()
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
     }
 }
 //Ctl Sound
 function ctlSound() {
-    document.getElementById('volume').style.display = 'block';
+    document.getElementById('controlsMain').style.display = 'block';
     document.getElementById('click_Sound').play();
-    setTimeout(() => {
-        document.getElementById('volume').style.display = 'none';
-    }, 10000);
+
 }
 //Disable Right Mouse Click
 document.addEventListener('contextmenu', event => event.preventDefault());
@@ -185,3 +178,11 @@ window.addEventListener("load", function() {
     const loader = document.querySelector(".loader");
     loader.className += " hidden";
 });
+//List Details
+function listDetails() {
+    document.getElementById('click_Sound').play()
+    setTimeout(() => {
+        document.getElementById('listDetails').open = false;
+        document.getElementById('click_Sound').play()
+    }, 5000);
+}

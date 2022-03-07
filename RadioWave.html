@@ -27,14 +27,39 @@ Github    :  https://github.com/AndreiAbd
 </head>
 
 <body>
-
     <audio src="ogg/00_Hint.ogg" id="click_Sound"></audio>
-    <div class="headerRadioWave">
-        <img src="png/00_Icon_Radio_Wave.png" alt="Logo" class="logoSign" onclick="window.location.reload();">
-        <p>Radio Wave</p>
-    </div>
-    <br>
     <div class="card-body" style="background-image: url(img/00_Bk_Radio.jpg);background-repeat:repeat;">
+        <div class="headerRadioWave">
+            <img src="png/00_Icon_Radio_Wave.png" alt="Logo" class="logoSign">
+            <p>Radio Wave</p>
+        </div>
+        <br>
+        <details class="listDetails" id="listDetails" onclick="listDetails()">
+            <summary>Station List</summary>
+            <ul>
+                <li>Monti Carlo Arabic.</li>
+                <li>BBC Arabic.</li>
+                <li>Sky News Arabic.</li>
+                <li>SAWA.</li>
+                <li>9090.</li>
+                <li>Al Madina.</li>
+                <li>Rayan</li>
+                <li>Sawt Al Shabab</li>
+                <li>Ninar</li>
+                <li>Damascu</li>
+                <li>Amwaj</li>
+                <li>Fuse</li>
+                <li>Sada ljabl</li>
+                <li>Melody</li>
+                <li>Zenobia</li>
+                <li>Karma</li>
+                <li>Sham</li>
+                <li>Nostalgie</li>
+                <li>Angami</li>
+                <li>Quran</li>
+                <li>Magic</li>
+            </ul>
+        </details>
         <div id="player" class="player">
             <div class="upStyle">
                 <div id="blankGif">
@@ -43,7 +68,7 @@ Github    :  https://github.com/AndreiAbd
                 <img src="gif/wave.gif" id="waveGif" class="waveGif">
             </div>
             <header>
-                <p id="title_radio" style="text-shadow: 0px 0px 5px #000;color: #76b1f8;border-top:1px solid #4182d3 ;border-bottom:1px solid #4182d3 ;">[Please Wait]</p>
+                <p id="title_radio" style="text-shadow: 0px 0px 5px #000;color: #fff;border-top:1px solid #4182d3 ;border-bottom:1px solid #4182d3 ;">[Please Wait]</p>
             </header>
             <div id="content">
                 <div id="buttons" class="buttons">
@@ -54,19 +79,28 @@ Github    :  https://github.com/AndreiAbd
                     <hr style="color: #4182d3;">
                     <button onclick="ctlSound()">&#9776;</button>
                 </div>
-                <div id="volume" class="volume">
-                    <h4>Volume</h4>
-                    <input type="range" id="volume_range">
-                    <h4>Sound Speed</h4>
-                    <input type="range" id="volume_speed" max="200" min="0">
-                </div>
+            </div>
+        </div>
+        <br>
+        <footer>
+            <a href="https://andreiabd.github.io/CoderX/" target="_blank">Powred by CoderX © <span id="addCurrentYear"></span></a>
+        </footer>
+        <div id="controlsMain" class="controlsMain">
+            <div class="controlCtlMain" style="background-image: url(img/00_Bk_Radio.jpg);background-repeat:repeat;">
+                <span style="font-weight: bold;">Control Settings</span>
+                <hr style="color: #4182d3;">
+                <button onclick="window.location.reload()">Refresh</button><br>
+                <button onclick="openFullscreen()">Full Screen</button><br>
+                <button onclick="document.getElementById('click_Sound').play()">Volume Range</button><br>
+                <input type="range" id="volume_range"><br>
+                <button onclick="document.getElementById('click_Sound').play()">Sound Speed</button><br>
+                <input type="range" id="volume_speed" max="200" min="0">
+                <hr style="color: #4182d3;">
+                <button onclick="document.getElementById('controlsMain').style.display='none';document.getElementById('click_Sound').play()">close</button>
             </div>
         </div>
     </div>
-    <br>
-    <footer>
-        <a href="https://andreiabd.github.io/CoderX/" target="_blank">Powred by CoderX © <span id="addCurrentYear"></span></a>
-    </footer>
+
     <!--Loader Page-->
     <div class="loader">
         <div class="logo-loader">
