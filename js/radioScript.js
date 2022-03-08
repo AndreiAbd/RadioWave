@@ -32,7 +32,7 @@ class Audio_Player {
         this.name_radio[0] = "Monti Carlo Arabic";
         this.name_radio[1] = "BBC Arabic";
         this.name_radio[2] = "Sky News Arabic";
-        this.name_radio[3] = "SAWA";
+        this.name_radio[3] = "Al Hurah";
         this.name_radio[4] = "9090";
         this.name_radio[5] = "Al Madina";
         this.name_radio[6] = "Rayan";

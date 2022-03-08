@@ -141,7 +141,7 @@ body {
     border: 1px outset #4182d3;
     border-radius: 5px;
     margin: 10px;
-    width: 10%;
+    width: 60%;
     box-shadow: 0px 0px 10px #000;
     background-color: #222;
     color: #4182d3;
@@ -175,7 +175,6 @@ body {
 }
 
 #blankGif {
-    font-size: 20px;
     color: #4182d3;
     cursor: progress;
 }
@@ -210,12 +209,6 @@ footer>a {
     .headerRadioWave>img {
         width: 50px;
         height: 50px;
-    }
-    #blankGif {
-        font-size: 15px;
-    }
-    .buttons>button {
-        font-size: small;
     }
     footer>a {
         font-size: 10px;
